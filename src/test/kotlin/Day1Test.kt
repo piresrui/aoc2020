@@ -1,7 +1,6 @@
 package test.kotlin
 
-import aoc2020.ChallengeOne
-import aoc2020.ChallengeTwo
+import aoc2020.Day1
 import helpers.Helpers
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
@@ -13,7 +12,7 @@ class Day1Test {
 
         val input = listOf(1721, 979, 366, 299, 675, 1456)
 
-        val (a, b) = ChallengeOne().run(input, 2020)
+        val (a, b) = Day1().challengeOne(input, 2020)
 
         assertEquals(2020, a + b)
         assertEquals(514579, a * b)
@@ -22,7 +21,7 @@ class Day1Test {
     @Test
     fun testChallengeOne() {
         val input = Helpers.getFileResources("day1_luis.txt").map { it.toInt() }
-        val (a, b) = ChallengeOne().run(input, 2020)
+        val (a, b) = Day1().challengeOne(input, 2020)
 
         println("Pair is $a, $b : ${a*b}")
         assert(true)
@@ -32,7 +31,7 @@ class Day1Test {
     fun testChallengeTwoFunction() {
         val input = listOf(1721, 979, 366, 299, 675, 1456)
 
-        val mult = ChallengeTwo().run(input, 2020)
+        val mult = Day1().challengeTwo(input, 2020)
 
         assertEquals(241861950, mult)
     }
@@ -40,7 +39,8 @@ class Day1Test {
     @Test
     fun testChallengeTwo() {
         val input = Helpers.getFileResources("day1_luis.txt").map { it.toInt() }
-        val mult = ChallengeTwo().run(input, 2020)
+        val mult = Day1().challengeTwo(input, 2020)
+
         println(mult)
         assert(true)
     }
