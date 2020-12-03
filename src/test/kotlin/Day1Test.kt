@@ -20,7 +20,7 @@ class Day1Test {
 
     @Test
     fun testChallengeOne() {
-        val input = Helpers.getFileResources("day1_luis.txt").map { it.toInt() }
+        val input = Helpers.getFileResources("day1_rui.txt").map { it.toInt() }
         val (a, b) = Day1().challengeOne(input, 2020)
 
         println("Pair is $a, $b : ${a*b}")
@@ -38,7 +38,7 @@ class Day1Test {
 
     @Test
     fun testChallengeTwo() {
-        val input = Helpers.getFileResources("day1_luis.txt").map { it.toInt() }
+        val input = Helpers.getFileResources("day1_rui.txt").map { it.toInt() }
         val mult = Day1().challengeTwo(input, 2020)
 
         println(mult)
