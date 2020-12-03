@@ -16,7 +16,7 @@ class Day3 {
 
     }
 
-    fun walkSlope(index: Int, line: String, right: Int, down: Int): Int {
+    private fun walkSlope(index: Int, line: String, right: Int, down: Int): Int {
 
         /**
          * Line index * Steps to the right to get correct position per step
