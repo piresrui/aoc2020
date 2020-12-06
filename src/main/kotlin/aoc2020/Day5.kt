@@ -23,7 +23,7 @@ class Day5 {
      * 23
      * 35
      *
-     * Sort and zip with the next number. If a number is mising then the pair
+     * Sort and zip with the next number. If a number is missing then the pair
      * will not be sequential. Non sequential find is the missing number
      */
     fun challengeTwo(input: List<String>): Int {
